@@ -71,7 +71,7 @@ class MainController extends Controller
     }
 
     public function actionAll(){
-        $request = Request::find()->where(['status'=>2])->all();
+        $request = Request::find()->where(['status'=>2])->limit(4)->all();
         return $this->render('all',['request'=>$request]);
     }
 }

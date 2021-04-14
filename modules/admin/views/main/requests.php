@@ -10,7 +10,7 @@ use yii\helpers\Url;
 <div class="h3 text-center">Все заявки</div>
 <div class="row">
 <?php foreach ($request as $req):?>
-    <div class="col-md-4">
+    <div class="col-md-6">
         <div class="thumbnail" style="position: relative">
             <?php if($req->status==2):?>
             <div class="img2"  style="background-image:url('<?=Yii::getAlias('@web') . '/uploads/' . $req->photo_before?>') ;background-size: cover;height: 300px;"   data-img="<?=Yii::getAlias('@web') . '/uploads/' . $req->photo_before?>"></div>

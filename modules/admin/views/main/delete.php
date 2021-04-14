@@ -11,7 +11,7 @@ Pjax::begin();
 if (Yii::$app->session->hasFlash("goodDelete")):?>
     <div class="row">
         <div class="col-md-12">
-            <div class="alert alert-success" role="alert">Вы успешно изменили статус на решена!</div>
+            <div class="alert alert-success" role="alert">Вы успешно изменили статус на отклонена!</div>
         </div>
     </div>
 <?php

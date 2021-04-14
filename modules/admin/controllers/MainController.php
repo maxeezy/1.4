@@ -35,12 +35,14 @@ class MainController extends Controller
                         if (\Yii::$app->request->isPjax) {
 
                             $model = new CompleteForm();
+                            return $this->refresh();
 
                         } elseif (\Yii::$app->request->isPost) {
 
                             $this->refresh();
 
                         }
+
                     }
                 }
                 return $this->render('delete',['model'=>$model]);
